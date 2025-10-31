@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "Senior Frontend Developer Assessment",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo run build",
+    "dev": "turbo run dev"
   },
   "author": "Denis Dryk",
   "license": "ISC",
-  "packageManager": "pnpm@10.12.1"
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "turbo": "^2.5.8"
+  }
 }
