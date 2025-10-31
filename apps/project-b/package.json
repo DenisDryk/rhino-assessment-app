@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@packages/constants": "workspace:^",
-    "@packages/typescript-config": "workspace:^",
-    "@packages/prettier-config": "workspace:^",
     "@packages/shared-ui": "workspace:^",
     "@packages/types": "workspace:^",
     "react": "19.2.0",
@@ -20,6 +18,8 @@
     "next": "16.0.1"
   },
   "devDependencies": {
+    "@packages/typescript-config": "workspace:^",
+    "@packages/prettier-config": "workspace:^",
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
