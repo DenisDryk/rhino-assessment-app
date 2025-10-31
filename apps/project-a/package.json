@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@packages/constants": "workspace:^",
+    "@packages/typescript-config": "workspace:^",
     "@packages/prettier-config": "workspace:^",
     "@packages/shared-ui": "workspace:^",
     "@packages/types": "workspace:^",

@@ -12,6 +12,7 @@
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
     "@packages/prettier-config": "workspace:*",
+    "@packages/typescript-config": "workspace:*",
     "prettier": "^3.6.2",
     "turbo": "^2.5.8"
   }

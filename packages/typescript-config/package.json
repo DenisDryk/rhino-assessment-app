@@ -1,0 +1,7 @@
+{
+  "name": "@packages/typescript-config",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Denis Dryk",
+  "packageManager": "pnpm@10.12.1"
+}
