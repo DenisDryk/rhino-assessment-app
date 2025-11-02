@@ -12,6 +12,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
+    "@packages/eslint-config": "workspace:*",
     "@packages/prettier-config": "workspace:*",
     "@packages/typescript-config": "workspace:*",
     "prettier": "^3.6.2",
