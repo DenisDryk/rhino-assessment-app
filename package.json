@@ -16,6 +16,7 @@
     "@packages/prettier-config": "workspace:*",
     "@packages/typescript-config": "workspace:*",
     "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1",
     "turbo": "^2.5.8"
   }
 }
