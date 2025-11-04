@@ -1,5 +1,7 @@
 import path from 'node:path';
+
 import { defineConfig } from 'vite';
+import { configDefaults } from 'vitest/config';
 
 export default defineConfig({
   test: {
@@ -8,5 +10,6 @@ export default defineConfig({
     alias: {
       '@utils': path.resolve(__dirname, './src/utils'),
     },
+    exclude: [...configDefaults.exclude, 'dist', 'build', 'node_modules'],
   },
 });

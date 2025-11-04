@@ -1,6 +1,5 @@
-import { describe, it, expect, render, screen } from '@utils/testing';
-
 import ProductCard from './ProductCard';
+import { describe, it, expect, render, screen } from '../../utils/testing';
 
 describe('ProductCard component', () => {
   it('should render', () => {
