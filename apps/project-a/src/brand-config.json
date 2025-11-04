@@ -1,0 +1,12 @@
+{
+  "BRAND": {
+    "TITLE": "ProjectA",
+    "LOCALES": {
+      "DEFAULT": "en",
+      "AVAILABLE_LOCALES": ["en", "ca"]
+    }
+  },
+  "CONFIGURATIONS": {
+    "MENU_POSITION": "left"
+  }
+}

@@ -1,7 +1,17 @@
 import type { NextConfig } from 'next';
 
+import BrandConfig from './src/brand-config.json';
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: `/${BrandConfig.BRAND.LOCALES.DEFAULT}`,
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
