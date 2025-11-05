@@ -2,7 +2,7 @@ import '@packages/shared-ui/styles.css';
 import { cn } from '@packages/shared-ui/utils';
 import type { Metadata } from 'next';
 
-import { BRAND_DEFAULT_LOCALE, BRAND_TITLE } from '@constants/brand';
+import { BRAND_TITLE } from '@constants/brand';
 import { FontPrimary } from '@styles/fonts';
 import '@styles/globals.css';
 
@@ -16,9 +16,14 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const RootLayout = async ({ children }: LayoutProps<'/'>) => {
   return (
-    <html lang={BRAND_DEFAULT_LOCALE}>
-      <body className={cn('font-primary antialiased', FontPrimary.variable)}>
-        {children}
+    <html lang='en'>
+      <body
+        className={cn(
+          'bg-background font-primary flex min-h-screen overflow-x-hidden antialiased',
+          FontPrimary.variable,
+        )}
+      >
+        <>{children}</>
       </body>
     </html>
   );

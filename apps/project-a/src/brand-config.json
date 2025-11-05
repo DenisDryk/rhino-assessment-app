@@ -1,9 +1,9 @@
 {
   "BRAND": {
     "TITLE": "ProjectA",
-    "LOCALES": {
+    "MARKETS": {
       "DEFAULT": "en",
-      "AVAILABLE_LOCALES": ["en", "ca"]
+      "AVAILABLE_MARKETS": ["en", "ca"]
     }
   },
   "CONFIGURATIONS": {

@@ -5,7 +5,7 @@ import { ROUTES } from '@constants/routes';
 
 const SingleMarketNotFound = () => {
   return (
-    <section className='flex h-full flex-col items-center justify-center gap-4'>
+    <section className='m-auto flex h-full flex-col items-center justify-center gap-4'>
       <Typography as='h1' variant='h1'>
         404 - Market not found
       </Typography>
