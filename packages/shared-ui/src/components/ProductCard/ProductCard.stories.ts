@@ -7,12 +7,25 @@ const meta: Meta<typeof ProductCard> = {
   parameters: {
     layout: 'centered',
   },
-  tags: ['autodocs'],
-  argTypes: {},
-  args: {},
+  args: {
+    category: 'Category',
+    title: 'Title',
+    tags: ['Tag 1', 'Tag 2'],
+    media: { src: 'https://placehold.co/200x200' },
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Vertical: Story = {
+  args: {
+    layout: 'vertical',
+  },
+};
+
+export const Horizontal: Story = {
+  args: {
+    layout: 'horizontal',
+  },
+};
