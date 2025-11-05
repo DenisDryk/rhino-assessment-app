@@ -1,0 +1,13 @@
+{
+  "BRAND": {
+    "TITLE": "ProjectB",
+    "MARKETS": {
+      "DEFAULT": "ca",
+      "AVAILABLE_MARKETS": ["en", "ca"]
+    }
+  },
+  "CONFIGURATIONS": {
+    "MENU_POSITION": "right",
+    "ALERT_BUTTON_TEXT": "Hello from Red Project"
+  }
+}
