@@ -6,13 +6,12 @@ import { BRAND_TITLE } from '@constants/brand';
 import { FontPrimary } from '@styles/fonts';
 import '@styles/globals.css';
 
-export async function generateMetadata(): Promise<Metadata> {
-  const title = BRAND_TITLE;
-
-  return {
-    title,
-  };
-}
+export const metadata: Metadata = {
+  title: {
+    default: BRAND_TITLE,
+    template: `%s | ${BRAND_TITLE}`,
+  },
+};
 
 const RootLayout = async ({ children }: LayoutProps<'/'>) => {
   return (

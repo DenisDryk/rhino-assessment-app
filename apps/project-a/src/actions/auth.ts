@@ -1,10 +1,7 @@
 'use server';
 
-import { redirect } from 'next/navigation';
-
 import { createSessionAction, deleteSessionAction } from '@actions/session';
 import Credentials from '@constants/credentials.json';
-import { ROUTES } from '@constants/routes';
 import {
   TZSigninFormSchema,
   ZSigninFormSchema,
@@ -35,7 +32,7 @@ export const signinAction = async (values: TZSigninFormSchema) => {
 
   await createSessionAction({ userId: user.id, username: user.username });
 
-  redirect(ROUTES.INDEX);
+  return { success: true };
 };
 
 export const logoutAction = async () => {

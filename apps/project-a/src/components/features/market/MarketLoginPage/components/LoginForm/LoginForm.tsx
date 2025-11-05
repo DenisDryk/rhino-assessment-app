@@ -1,6 +1,7 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useRouter } from 'next/navigation';
 import { useState, useTransition } from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -15,12 +16,14 @@ import {
   FormMessage,
 } from '@components/ui/form';
 import { Input } from '@components/ui/input';
+import { ROUTES } from '@constants/routes';
 import {
   TZSigninFormSchema,
   ZSigninFormSchema,
 } from '@constants/schemas/signin';
 
 const LoginForm = () => {
+  const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [formError, setFormError] = useState<string>();
 
@@ -36,7 +39,10 @@ const LoginForm = () => {
     setFormError('');
     startTransition(async () => {
       const { success, message } = await signinAction(values);
-      if (success) form.reset();
+      if (success) {
+        form.reset();
+        router.push(ROUTES.INDEX);
+      }
       if (!success) setFormError(message);
     });
   };
