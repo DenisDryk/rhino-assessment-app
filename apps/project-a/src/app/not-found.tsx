@@ -3,14 +3,14 @@ import Link from 'next/link';
 
 import { ROUTES } from '@constants/routes';
 
-const SingleMarketNotFound = () => {
+const NotFound = () => {
   return (
     <section className='m-auto flex h-full flex-col items-center justify-center gap-4'>
       <Typography as='h1' variant='h1'>
-        404 - Market not found
+        404 - Page not found
       </Typography>
       <Typography>
-        The market you are looking for does not exist. Please go back to the
+        The page you are looking for does not exist. Please go back to the
         homepage.
       </Typography>
       <Link className='text-blue-500 hover:underline' href={ROUTES.INDEX}>
@@ -20,4 +20,4 @@ const SingleMarketNotFound = () => {
   );
 };
 
-export default SingleMarketNotFound;
+export default NotFound;
