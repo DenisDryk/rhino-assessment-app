@@ -7,6 +7,7 @@
     }
   },
   "CONFIGURATIONS": {
-    "MENU_POSITION": "left"
+    "MENU_POSITION": "left",
+    "ALERT_BUTTON_TEXT": "Hello from Green Project"
   }
 }

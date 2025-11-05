@@ -5,6 +5,10 @@ import Link from 'next/link';
 
 import { Button } from '@components/ui/button';
 import { BRAND_MARKETS, BRAND_TITLE } from '@constants/brand';
+import { withFeatureFlag } from '@constants/featureFlags';
+
+import AlertButton from './components/AlertButton';
+import BrandConfig from '../../../../brand-config.json';
 
 interface IMarketHomePageProps {
   market: MARKET;
@@ -22,18 +26,29 @@ const MarketHomePage = ({ market }: IMarketHomePageProps) => {
         <Typography className='text-muted-foreground mb-8'>
           Custom content for {marketName} market here.
         </Typography>
-        <div className='flex gap-2'>
-          {BRAND_MARKETS.map((btnMarket) => {
-            if (btnMarket === market) return;
-            const marketName = MARKET_NAMES[btnMarket as MARKET];
+        {withFeatureFlag('SHOW_BUTTON_ALERT') && (
+          <div className='mb-4'>
+            <AlertButton
+              alertText={BrandConfig.CONFIGURATIONS.ALERT_BUTTON_TEXT}
+            >
+              Alert Button
+            </AlertButton>
+          </div>
+        )}
+        {withFeatureFlag('HIDE_MARKET_BUTTON') && (
+          <div className='flex gap-2'>
+            {BRAND_MARKETS.map((btnMarket) => {
+              if (btnMarket === market) return;
+              const marketName = MARKET_NAMES[btnMarket as MARKET];
 
-            return (
-              <Link href={`/${btnMarket}`} key={btnMarket}>
-                <Button>Switch to {marketName} market</Button>
-              </Link>
-            );
-          })}
-        </div>
+              return (
+                <Link href={`/${btnMarket}`} key={btnMarket}>
+                  <Button>Switch to {marketName} market</Button>
+                </Link>
+              );
+            })}
+          </div>
+        )}
       </section>
     </>
   );
