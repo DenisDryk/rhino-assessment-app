@@ -1,3 +1,4 @@
+import { cacheLife, cacheTag } from 'next/cache';
 import { cache } from 'react';
 
 import { TProduct } from './types';
@@ -12,6 +13,10 @@ export type TProductsResponse = {
 };
 
 export const getProducts = cache(async (): Promise<TProductsResponse> => {
+  'use cache';
+  cacheLife({ revalidate: 300 });
+  cacheTag('products');
+
   const response = await fetch(
     `${process.env.API_URL}/products?limit=${PRODUCTS_LIMIT}&skip=${30}`,
   );
