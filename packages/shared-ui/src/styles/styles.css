@@ -1,1 +1,7 @@
 @import 'tailwindcss';
+
+/* Tailwind v4 removed `cursor: pointer` from buttons by default.
+     It’s intentional, rooted in legacy UX logic. */
+:where(button, [role='button']):not([disabled]) {
+  cursor: pointer;
+}
