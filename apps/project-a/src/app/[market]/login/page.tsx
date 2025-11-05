@@ -1,5 +1,7 @@
+import MarketLoginPage from '@components/features/market/MarketLoginPage';
+
 const LoginPage = ({}: PageProps<'/[market]/login'>) => {
-  return <>LoginPage</>;
+  return <MarketLoginPage />;
 };
 
 export default LoginPage;

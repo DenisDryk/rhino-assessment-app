@@ -1,4 +1,4 @@
-import Layout from '@components/organisms/Layout';
+import Layout from '@components/features/layout/Layout';
 
 const MarketLayout = ({ children }: LayoutProps<'/[market]'>) => {
   return <Layout>{children}</Layout>;
