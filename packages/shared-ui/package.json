@@ -21,7 +21,8 @@
     "dev:styles": "tailwindcss -i ./src/styles/styles.css -o ./dist/index.css --watch",
     "dev:components": "tsc --watch",
     "lint": "eslint src",
-    "test": "vitest",
+    "test": "vitest run",
+    "dev:test": "vitest",
     "coverage": "vitest run --coverage",
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build"
