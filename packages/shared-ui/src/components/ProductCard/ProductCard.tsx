@@ -69,7 +69,7 @@ const ProductCard = ({
                   {category && (
                     <Typography
                       className='text-muted-foreground'
-                      dataTestId={`${dataTestId}-category}`}
+                      dataTestId={`${dataTestId}-category`}
                     >
                       {category}
                     </Typography>
@@ -120,7 +120,7 @@ const ProductCard = ({
                   {category && (
                     <Typography
                       className='text-muted-foreground'
-                      dataTestId={`${dataTestId}-category}`}
+                      dataTestId={`${dataTestId}-category`}
                     >
                       {category}
                     </Typography>

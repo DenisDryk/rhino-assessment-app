@@ -31,10 +31,10 @@ describe('ProductCard component', () => {
     ).toBeInTheDocument();
     expect(screen.getByTestId('product-card-test-id-tags')).toBeInTheDocument();
     expect(
-      screen.getByTestId('product-card-test-id-tags-tag-0'),
+      screen.getByTestId('product-card-test-id-tag-0'),
     ).toBeInTheDocument();
     expect(
-      screen.getByTestId('product-card-test-id-tags-tag-1'),
+      screen.getByTestId('product-card-test-id-tag-1'),
     ).toBeInTheDocument();
   });
 });
