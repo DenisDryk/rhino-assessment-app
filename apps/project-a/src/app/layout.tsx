@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
 };
 
-const RootLayout = async ({ children }: LayoutProps<'/'>) => {
+const RootLayout = ({ children }: LayoutProps<'/'>) => {
   return (
     <html lang='en'>
       <body
@@ -22,7 +22,7 @@ const RootLayout = async ({ children }: LayoutProps<'/'>) => {
           FontPrimary.variable,
         )}
       >
-        <>{children}</>
+        {children}
       </body>
     </html>
   );
