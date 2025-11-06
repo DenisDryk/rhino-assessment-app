@@ -27,6 +27,11 @@ To start all projects in development mode, run:
 turbo dev
 ```
 
+- **project-a** app is going to be available on `http://localhost:3001`;
+- **project-b** app is going to be available on `http://localhost:3002`;
+- **shared-ui** package can be modified and the changes are going to be applied to apps.
+  - for this package storybook env implemented.
+
 ## Linting
 
 To check all projects with ESLint, execute:
