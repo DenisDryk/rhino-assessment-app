@@ -11,7 +11,7 @@ const AuthLogin = async () => {
   if (session.isAuth) {
     return (
       <form action={logoutAction}>
-        <Button variant='outline'>Log Out</Button>
+        <Button variant='secondary'>Log Out</Button>
       </form>
     );
   }
