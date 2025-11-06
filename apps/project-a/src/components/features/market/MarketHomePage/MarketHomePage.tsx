@@ -3,7 +3,7 @@ import { Typography } from '@packages/shared-ui/components';
 import { MARKET } from '@packages/types';
 import Link from 'next/link';
 
-import { Button } from '@components/ui/button';
+import Button from '@components/atoms/Button';
 import { BRAND_MARKETS, BRAND_TITLE } from '@constants/brand';
 import { withFeatureFlag } from '@constants/featureFlags';
 

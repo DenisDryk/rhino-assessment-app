@@ -1,8 +1,7 @@
-import { Typography } from '@packages/shared-ui/components';
+import { Skeleton, Typography } from '@packages/shared-ui/components';
 import Link from 'next/link';
 import { Suspense } from 'react';
 
-import { Skeleton } from '@components/ui/skeleton';
 import { ROUTES } from '@constants/routes';
 
 import AuthLogin from './components/AuthLogin';

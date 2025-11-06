@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { logoutAction } from '@actions/auth';
 import { verifySession } from '@actions/session';
-import { Button } from '@components/ui/button';
+import Button from '@components/atoms/Button';
 import { ROUTES } from '@constants/routes';
 
 const AuthLogin = async () => {

@@ -1,5 +1,6 @@
+import { Skeleton } from '@packages/shared-ui/components';
+
 import { PRODUCTS_LIMIT } from '@api/products/get';
-import { Skeleton } from '@components/ui/skeleton';
 
 const ProductsLoaing = () => {
   return (

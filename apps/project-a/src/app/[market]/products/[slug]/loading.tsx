@@ -1,4 +1,4 @@
-import { Skeleton } from '@components/ui/skeleton';
+import { Skeleton } from '@packages/shared-ui/components';
 
 const ProductLoading = () => {
   return (

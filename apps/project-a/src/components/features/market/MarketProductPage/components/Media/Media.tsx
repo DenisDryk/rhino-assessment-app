@@ -1,14 +1,15 @@
-import Image from 'next/image';
-
-import { TProduct } from '@api/products/types';
-import { Card, CardContent } from '@components/ui/card';
 import {
+  Card,
+  CardContent,
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@components/ui/carousel';
+} from '@packages/shared-ui/components';
+import Image from 'next/image';
+
+import { TProduct } from '@api/products/types';
 
 interface IMediaProps {
   images: TProduct['images'];

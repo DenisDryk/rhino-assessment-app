@@ -4,7 +4,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@components/ui/card';
+} from '@packages/shared-ui/components';
 
 import LoginForm from './components/LoginForm';
 

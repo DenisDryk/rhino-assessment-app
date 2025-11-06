@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@components/ui/button';
+import Button from '@components/atoms/Button';
 
 interface IAlertButtonProps {
   children?: React.ReactNode;
@@ -13,7 +13,7 @@ const AlertButton = ({ children, alertText, ...props }: IAlertButtonProps) => {
   };
 
   return (
-    <Button className='bg-red-800' onClick={handleButtonClick} {...props}>
+    <Button variant='brand' onClick={handleButtonClick} {...props}>
       {children}
     </Button>
   );
