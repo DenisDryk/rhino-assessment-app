@@ -12,7 +12,7 @@ interface IMarketProductsPageProps {
 const MarketProductsPage = ({ products }: IMarketProductsPageProps) => {
   return (
     <section>
-      <div className='grid grid-cols-2 gap-6 md:grid-cols-4 xl:grid-cols-6'>
+      <div className='grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3'>
         {products.map((product) => (
           <Link
             className='flex'
@@ -27,6 +27,7 @@ const MarketProductsPage = ({ products }: IMarketProductsPageProps) => {
                 src: product.images[0],
                 as: Image,
               }}
+              layout='horizontal'
             />
           </Link>
         ))}
